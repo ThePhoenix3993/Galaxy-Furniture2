@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galaxy Furniture</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="app-container">
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="navbar-top">
+        <div class="container navbar-top-container">
+          <p class="announcement">Free Shipping on orders above ₹1999 • Welcome to Galaxy Furniture!</p>
+        </div>
+      </div>
+      <div class="navbar-main">
+        <div class="container nav-container">
+          
+          <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+            <i data-lucide="menu"></i>
+          </button>
+
+          <a href="index.html" class="nav-logo">
+            <h2>GALAXY</h2>
+            <span>FURNITURE AND INTERIOR</span>
+          </a>
+
+          <nav class="nav-links" id="nav-links">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="shop.html">Shop All</a></li>
+              <li class="dropdown">
+                <span class="dropdown-trigger">Categories</span>
+                <div class="dropdown-menu">
+                  <ul>
+                    <li><a href="shop.html?category=Sofas%20%26%20Loungers">Sofas & Loungers</a></li>
+                    <li><a href="shop.html?category=Beds%20%26%20Mattresses">Beds & Mattresses</a></li>
+                    <li><a href="shop.html?category=Dining%20Tables%20%26%20Chairs">Dining Tables & Chairs</a></li>
+                    <li><a href="shop.html?category=Modular%20Kitchens">Modular Kitchens</a></li>
+                    <li><a href="shop.html?category=Wall%20Decor%20%26%20Art">Wall Decor & Art</a></li>
+                    <li><a href="shop.html?category=Coffee%20%26%20Side%20Tables">Coffee & Side Tables</a></li>
+                    <li><a href="shop.html?category=Almirahs%20%26%20Wardrobes">Almirahs & Wardrobes</a></li>
+                    <li><a href="shop.html?category=Office%20Furniture">Office Furniture</a></li>
+                    <li><a href="shop.html?category=TV%20Units%20%26%20Consoles">TV Units & Consoles</a></li>
+                    <li><a href="shop.html?category=Bookshelves%20%26%20Display">Bookshelves & Display</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="tracking.html">Track Order</a></li>
+            </ul>
+          </nav>
+
+          <div class="nav-actions">
+            <button class="icon-btn" aria-label="Search"><i data-lucide="search"></i></button>
+            <a href="wishlist.html" class="icon-btn" aria-label="Wishlist"><i data-lucide="heart"></i></a>
+            <a href="cart.html" class="icon-btn cart-btn" aria-label="Cart">
+              <i data-lucide="shopping-cart"></i>
+              <span class="cart-badge" id="cart-badge-count">3</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="home-page animate-fade-in">
+        <!-- Hero Section -->
+        <section class="hero">
+          <div class="hero-bg">
+            <img src="photos/KITCHEN3.jpeg" alt="Beautiful interior" />
+            <div class="hero-overlay"></div>
+          </div>
+          <div class="container hero-content">
+            <h1>Transform Your Space,<br />Tell Your Story</h1>
+            <p>Discover our curated collection of premium home décor and interior accents designed to elevate your living spaces.</p>
+            <div class="hero-actions">
+              <a href="shop.html" class="btn btn-primary">Shop Collection <i data-lucide="arrow-right" style="margin-left: 8px;"></i></a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Welcome Note -->
+        <section class="welcome-section">
+          <div class="container welcome-container">
+            <div class="welcome-text">
+              <h2>Welcome to Galaxy</h2>
+              <p>
+                "I started Galaxy Furniture and Interior with a simple vision: to bring artistry and elegance into every home.
+                Each piece in our collection is carefully selected for its quality, aesthetic, and ability to tell a unique story in your space.
+                Whether you're looking for a statement piece or subtle accents, we are here to help you create a home you truly love."
+              </p>
+              <span class="signature">Anand Singh, Founder</span>
+            </div>
+            <div class="welcome-image">
+              <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=800" alt="Interior Details" />
+            </div>
+          </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="featured-section">
+          <div class="container">
+            <h2 class="section-title">New Arrivals</h2>
+            <div class="product-grid" id="featured-products">
+              <!-- Product 1 -->
+              <div class="product-card">
+                <div class="product-image-container">
+                  <a href="product.html?id=1">
+                    <img src="photos/sofa2.jpg" alt="Luxury Grey Sectional Sofa" class="product-image" />
+                  </a>
+                  <button class="wishlist-btn" aria-label="Add to Wishlist">
+                    <i data-lucide="heart"></i>
+                  </button>
+                  <span class="product-badge new">New</span>
+                </div>
+                <div class="product-info">
+                  <span class="product-category">Sofas & Loungers</span>
+                  <a href="product.html?id=1" class="product-name">
+                    <h3>Luxury Grey Sectional Sofa</h3>
+                  </a>
+                  <div class="product-price">
+                    <span class="current-price">₹68999</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 2 -->
+              <div class="product-card">
+                <div class="product-image-container">
+                  <a href="product.html?id=2">
+                    <img src="photos/DINNING2.png" alt="Oak Dining Table" class="product-image" />
+                  </a>
+                  <button class="wishlist-btn" aria-label="Add to Wishlist">
+                    <i data-lucide="heart"></i>
+                  </button>
+                  <span class="product-badge sale">Sale</span>
+                </div>
+                <div class="product-info">
+                  <span class="product-category">Dining Tables & Chairs</span>
+                  <a href="product.html?id=2" class="product-name">
+                    <h3>Oak Dining Table</h3>
+                  </a>
+                  <div class="product-price">
+                    <span class="current-price">₹34999</span>
+                    <span class="old-price">₹42000</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 3 -->
+              <div class="product-card">
+                <div class="product-image-container">
+                  <a href="product.html?id=3">
+                    <img src="photos/KITCHEN1.jpeg" alt="Modern Minimalist Kitchen" class="product-image" />
+                  </a>
+                  <button class="wishlist-btn" aria-label="Add to Wishlist">
+                    <i data-lucide="heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <span class="product-category">Modular Kitchens</span>
+                  <a href="product.html?id=3" class="product-name">
+                    <h3>Modern Minimalist Kitchen</h3>
+                  </a>
+                  <div class="product-price">
+                    <span class="current-price">₹145000</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 4 -->
+              <div class="product-card">
+                <div class="product-image-container">
+                  <a href="product.html?id=4">
+                    <img src="photos/KITCHEN3.jpeg" alt="Colorful Modular Kitchen" class="product-image" />
+                  </a>
+                  <button class="wishlist-btn" aria-label="Add to Wishlist">
+                    <i data-lucide="heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <span class="product-category">Modular Kitchens</span>
+                  <a href="product.html?id=4" class="product-name">
+                    <h3>Colorful Modular Kitchen</h3>
+                  </a>
+                  <div class="product-price">
+                    <span class="current-price">₹189000</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="view-all-container">
+              <a href="shop.html" class="btn btn-outline">View All Products</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Visual Categories / Callout -->
+        <section class="category-callout">
+          <div class="container callout-grid">
+            <a href="shop.html?category=Sofas" class="callout-card">
+              <img src="photos/sofa2.jpg" alt="Sofas" />
+              <div class="callout-content">
+                <h3>Premium Sofas</h3>
+                <span>Explore Collection</span>
+              </div>
+            </a>
+            <a href="shop.html?category=Dining" class="callout-card">
+              <img src="https://images.unsplash.com/photo-1551298370-9d3d53740c72?auto=format&fit=crop&q=80&w=800" alt="Dining" />
+              <div class="callout-content">
+                <h3>Dining Sets</h3>
+                <span>Explore Collection</span>
+              </div>
+            </a>
+            <a href="shop.html?category=Wall+Decor" class="callout-card">
+              <img src="https://images.unsplash.com/photo-1544457070-4cd773b4d71e?auto=format&fit=crop&q=80&w=800" alt="Wall Decor" />
+              <div class="callout-content">
+                <h3>Wall Decor & Art</h3>
+                <span>Explore Collection</span>
+              </div>
+            </a>
+            <a href="shop.html?category=Kitchens" class="callout-card">
+              <img src="photos/KITCHEN1.jpeg" alt="Modular Kitchens" />
+              <div class="callout-content">
+                <h3>Modular Kitchens</h3>
+                <span>Explore Collection</span>
+              </div>
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer animate-fade-in">
+      <div class="container footer-container">
+        
+        <div class="footer-widget">
+          <h3 class="footer-logo">GALAXY <span>FURNITURE</span></h3>
+          <p class="footer-desc">
+            Transform your space and tell your story with our curated collection of premium home décor and furnishings.
+          </p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-widget">
+          <h4>Customer Care</h4>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="tracking.html">Track Your Order</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Returns & Exchanges</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-widget">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop Collection</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-widget contact-widget">
+          <h4>Get In Touch</h4>
+          <div class="contact-item">
+            <i data-lucide="map-pin" class="contact-icon"></i>
+            <p>PRADHAN COMPLEX<br />opp. ACCO GRAND HOTEL<br />Khurram Nagar, Lucknow<br />Uttar Pradesh 226022</p>
+          </div>
+          <div class="contact-item">
+            <i data-lucide="phone" class="contact-icon"></i>
+            <p><a href="tel:+919260970293">+91 9260970293</a></p>
+          </div>
+          <div class="contact-item">
+            <i data-lucide="mail" class="contact-icon"></i>
+            <p><a href="mailto:hello@galaxyfurniture.com">hello@galaxyfurniture.com</a></p>
+          </div>
+        </div>
+
+      </div>
+      
+      <div class="footer-bottom">
+        <div class="container">
+          <p>&copy; 2024 Galaxy Furniture and Interior. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

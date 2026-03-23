@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop - Galaxy Furniture</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="app-container">
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="navbar-top">
+        <div class="container navbar-top-container">
+          <p class="announcement">Free Shipping on orders above ₹1999 • Welcome to Galaxy Furniture!</p>
+        </div>
+      </div>
+      <div class="navbar-main">
+        <div class="container nav-container">
+          
+          <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+            <i data-lucide="menu"></i>
+          </button>
+
+          <a href="index.html" class="nav-logo">
+            <h2>GALAXY</h2>
+            <span>FURNITURE AND INTERIOR</span>
+          </a>
+
+          <nav class="nav-links" id="nav-links">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="shop.html" class="active">Shop All</a></li>
+              <li class="dropdown">
+                <span class="dropdown-trigger">Categories</span>
+                <div class="dropdown-menu">
+                  <ul>
+                    <li><a href="shop.html?category=Sofas%20%26%20Loungers">Sofas & Loungers</a></li>
+                    <li><a href="shop.html?category=Beds%20%26%20Mattresses">Beds & Mattresses</a></li>
+                    <li><a href="shop.html?category=Dining%20Tables%20%26%20Chairs">Dining Tables & Chairs</a></li>
+                    <li><a href="shop.html?category=Modular%20Kitchens">Modular Kitchens</a></li>
+                    <li><a href="shop.html?category=Wall%20Decor%20%26%20Art">Wall Decor & Art</a></li>
+                    <li><a href="shop.html?category=Coffee%20%26%20Side%20Tables">Coffee & Side Tables</a></li>
+                    <li><a href="shop.html?category=Almirahs%20%26%20Wardrobes">Almirahs & Wardrobes</a></li>
+                    <li><a href="shop.html?category=Office%20Furniture">Office Furniture</a></li>
+                    <li><a href="shop.html?category=TV%20Units%20%26%20Consoles">TV Units & Consoles</a></li>
+                    <li><a href="shop.html?category=Bookshelves%20%26%20Display">Bookshelves & Display</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="tracking.html">Track Order</a></li>
+            </ul>
+          </nav>
+
+          <div class="nav-actions">
+            <button class="icon-btn" aria-label="Search"><i data-lucide="search"></i></button>
+            <a href="wishlist.html" class="icon-btn" aria-label="Wishlist"><i data-lucide="heart"></i></a>
+            <a href="cart.html" class="icon-btn cart-btn" aria-label="Cart">
+              <i data-lucide="shopping-cart"></i>
+              <span class="cart-badge" id="cart-badge-count">3</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="shop-page animate-fade-in">
+        <div class="shop-header">
+          <div class="container">
+            <h1>Shop Collection</h1>
+            <p>Discover pieces that tell your story</p>
+          </div>
+        </div>
+
+        <div class="container shop-container">
+          <!-- Mobile controls -->
+          <div class="shop-controls-mobile">
+            <button class="btn btn-outline" id="mobile-filter-btn">
+              <i data-lucide="filter" style="margin-right: 8px;"></i> Filters
+            </button>
+            <div class="sort-wrapper">
+              <select class="sort-select">
+                <option value="newest">New Arrivals</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Sidebar -->
+          <aside class="shop-sidebar" id="shop-sidebar">
+            <div class="sidebar-close-btn" id="sidebar-close-btn">&times;</div>
+            <div class="filter-group">
+              <h3>Categories</h3>
+              <ul>
+                <li><button class="filter-btn active" data-cat="All">All</button></li>
+                <li><button class="filter-btn" data-cat="Sofas & Loungers">Sofas & Loungers</button></li>
+                <li><button class="filter-btn" data-cat="Beds & Mattresses">Beds & Mattresses</button></li>
+                <li><button class="filter-btn" data-cat="Dining Tables & Chairs">Dining Tables & Chairs</button></li>
+                <li><button class="filter-btn" data-cat="Modular Kitchens">Modular Kitchens</button></li>
+                <li><button class="filter-btn" data-cat="Wall Decor & Art">Wall Decor & Art</button></li>
+                <li><button class="filter-btn" data-cat="Coffee & Side Tables">Coffee & Side Tables</button></li>
+                <li><button class="filter-btn" data-cat="Almirahs & Wardrobes">Almirahs & Wardrobes</button></li>
+                <li><button class="filter-btn" data-cat="Office Furniture">Office Furniture</button></li>
+                <li><button class="filter-btn" data-cat="TV Units & Consoles">TV Units & Consoles</button></li>
+                <li><button class="filter-btn" data-cat="Bookshelves & Display">Bookshelves & Display</button></li>
+              </ul>
+            </div>
+
+            <div class="filter-group">
+              <h3>Price Range</h3>
+              <ul>
+                <li><label><input type="radio" name="price" /> Under ₹1000</label></li>
+                <li><label><input type="radio" name="price" /> ₹1000 - ₹3000</label></li>
+                <li><label><input type="radio" name="price" /> Over ₹3000</label></li>
+              </ul>
+            </div>
+          </aside>
+
+          <!-- Main Product Area -->
+          <main class="shop-main">
+            <div class="shop-toolbar glass-panel">
+              <div class="results-count" id="results-count-str">Showing results</div>
+              <div class="sort-wrapper desktop-sort">
+                <span class="sort-label">Sort By:</span>
+                <select class="sort-select">
+                  <option value="newest">New Arrivals</option>
+                  <option value="price-low">Price: Low to High</option>
+                  <option value="price-high">Price: High to Low</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="product-grid shop-grid" id="shop-grid-container">
+              <!-- Products injected via script.js -->
+            </div>
+          </main>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer animate-fade-in">
+      <div class="container footer-container">
+        
+        <div class="footer-widget">
+          <h3 class="footer-logo">GALAXY <span>FURNITURE</span></h3>
+          <p class="footer-desc">
+            Transform your space and tell your story with our curated collection of premium home décor and furnishings.
+          </p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-widget">
+          <h4>Customer Care</h4>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="tracking.html">Track Your Order</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Returns & Exchanges</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-widget">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop Collection</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-widget contact-widget">
+          <h4>Get In Touch</h4>
+          <div class="contact-item">
+            <i data-lucide="map-pin" class="contact-icon"></i>
+            <p>PRADHAN COMPLEX<br />opp. ACCO GRAND HOTEL<br />Khurram Nagar, Lucknow<br />Uttar Pradesh 226022</p>
+          </div>
+          <div class="contact-item">
+            <i data-lucide="phone" class="contact-icon"></i>
+            <p><a href="tel:+919260970293">+91 9260970293</a></p>
+          </div>
+          <div class="contact-item">
+            <i data-lucide="mail" class="contact-icon"></i>
+            <p><a href="mailto:hello@galaxyfurniture.com">hello@galaxyfurniture.com</a></p>
+          </div>
+        </div>
+
+      </div>
+      
+      <div class="footer-bottom">
+        <div class="container">
+          <p>&copy; 2024 Galaxy Furniture and Interior. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
